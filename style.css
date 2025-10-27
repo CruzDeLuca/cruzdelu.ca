@@ -119,3 +119,24 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     transform: translate(0);
 }
+
+/* Cursor glow (used by script.js) */
+.cursor-glow {
+    position: fixed;
+    pointer-events: none;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(59,130,246,0.35) 0%, rgba(59,130,246,0.12) 40%, transparent 60%);
+    mix-blend-mode: screen;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+    opacity: 0.85;
+    z-index: 9999;
+}
+
+.cursor-glow-active {
+    transform: scale(1.6);
+    opacity: 1;
+}

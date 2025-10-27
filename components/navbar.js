@@ -96,6 +96,16 @@ class CustomNavbar extends HTMLElement {
       </nav>
     `;
 
+    // Replace <i data-feather> inside this shadow root so feather icons render in Shadow DOM
+    if (window.feather) {
+      this.shadowRoot.querySelectorAll('[data-feather]').forEach(el => {
+        const name = el.getAttribute('data-feather');
+        if (feather.icons && feather.icons[name]) {
+          el.outerHTML = feather.icons[name].toSvg();
+        }
+      });
+    }
+
     // Initialize mobile menu toggle
     const menuBtn = this.shadowRoot.querySelector('.mobile-menu-btn');
     const navLinks = this.shadowRoot.querySelector('.nav-links');

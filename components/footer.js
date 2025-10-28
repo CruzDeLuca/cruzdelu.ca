@@ -49,10 +49,9 @@ class CustomFooter extends HTMLElement {
       <footer>
         <div class="footer-content">
           <div class="social-links">
-            <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
-            <a href="#" aria-label="GitHub"><i data-feather="github"></i></a>
-            <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
-            <a href="#" aria-label="Email"><i data-feather="mail"></i></a>
+            <a href="https://www.linkedin.com/in/cruzdeluca/" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+            <a href="https://github.com/CruzDeLuca" aria-label="GitHub"><i data-feather="github"></i></a>
+            <a href="mailto:cruz@cruzdelu.ca" aria-label="Email"><i data-feather="mail"></i></a>
           </div>
           <p class="copyright">© ${new Date().getFullYear()} Cruz DeLuca. All rights reserved.</p>
         </div>

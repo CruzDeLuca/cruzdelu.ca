@@ -62,7 +62,7 @@ if (contactForm) {
         try {
             await emailjs.sendForm(
                 'service_nokvkgr',    // From EmailJS dashboard
-                'template_r1kbcrl',   // From EmailJS dashboard
+                'template_hwan697',   // From EmailJS dashboard
                 contactForm
             );
             
